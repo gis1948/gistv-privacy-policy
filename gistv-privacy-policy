@@ -15,108 +15,117 @@
       color: #222;
       background: #fff;
     }
+
     h1 {
       color: #2FD4C0;
       margin-bottom: 8px;
     }
+
     h2 {
       color: #333;
       margin-top: 32px;
     }
+
     .updated {
       color: #666;
       margin-bottom: 32px;
     }
+
     a {
       color: #167f75;
     }
   </style>
 </head>
+
 <body>
 
 <h1>GisTV Privacy Policy</h1>
 
-<p class="updated"><strong>Last updated:</strong> September 20, 2026</p>
+<p class="updated">
+  <strong>Last updated:</strong> September 20, 2026
+</p>
 
 <p>
-GisTV ("GisTV", "we", "us", or "our") is an application provided by GIS.
-This Privacy Policy explains how information may be handled when you use the
-GisTV Android TV application.
+  GisTV ("GisTV", "we", "us", or "our") is an application provided by GIS.
+  This Privacy Policy explains how information may be handled when you use the
+  GisTV Android TV application.
 </p>
 
 <h2>1. Information You Provide</h2>
 
 <p>
-Depending on the features you use, GisTV may process information that you
-provide directly, such as your name, email address, account information,
-playlist information, or other information necessary to provide requested
-features.
+  Depending on the features you use, GisTV may process information that you
+  provide directly, such as your name, email address, account information,
+  playlist information, or other information necessary to provide requested
+  features.
 </p>
 
 <h2>2. Device and Technical Information</h2>
 
 <p>
-GisTV may process technical information associated with your device when
-necessary to operate, secure, synchronize, troubleshoot, or improve the
-application. This may include device or installation identifiers, application
-version information, operating-system information, network information, and
-diagnostic information.
+  GisTV may process technical information associated with your device when
+  necessary to operate, secure, synchronize, troubleshoot, or improve the
+  application. This may include device or installation identifiers,
+  application version information, operating-system information, network
+  information, and diagnostic information.
 </p>
 
 <p>
-GisTV does not require access to information unrelated to the functionality
-of the application.
+  GisTV does not require access to information unrelated to the functionality
+  of the application.
 </p>
 
 <h2>3. Account and Synchronization Features</h2>
 
 <p>
-If you use account or synchronization features, information associated with
-those features may be transmitted between the application and the services
-used to provide them. The information processed depends on the features you
-choose to use.
+  If you use account or synchronization features, information associated with
+  those features may be transmitted between the application and the services
+  used to provide them. The information processed depends on the features you
+  choose to use.
 </p>
 
 <p>
-Synchronization is intended to allow supported Gis applications and devices
-to maintain the information necessary for the enabled synchronization
-features.
+  Synchronization is intended to allow supported Gis applications and devices
+  to maintain the information necessary for the enabled synchronization
+  features.
 </p>
 
 <h2>4. Playlists and IPTV Information</h2>
 
 <p>
-If you configure IPTV or playlist features, GisTV may process information
-required to retrieve and display the content or services you configure.
-This may include playlist addresses, channel information, provider
-information, authentication information, and related configuration data,
-depending on the service you use.
+  If you configure IPTV or playlist features, GisTV may process information
+  required to retrieve and display the content or services you configure.
+  This may include playlist addresses, channel information, provider
+  information, authentication information, and related configuration data,
+  depending on the service you use.
 </p>
 
 <p>
-GisTV does not control the privacy practices of third-party IPTV providers,
-playlist providers, streaming services, or websites that you choose to
-access through the application. You should review the privacy policies of
-those services separately.
+  GisTV does not control the privacy practices of third-party IPTV providers,
+  playlist providers, streaming services, or websites that you choose to
+  access through the application. You should review the privacy policies of
+  those services separately.
 </p>
 
 <h2>5. Analytics, Advertising, and Diagnostics</h2>
 
 <p>
-GisTV may use technical diagnostics or similar services when required to
-operate and maintain the application. If third-party analytics, crash
-reporting, or advertising services are enabled in a particular version of
-GisTV, those services may process information according to their own privacy
-policies.
+  GisTV may use technical diagnostics or similar services when required to
+  operate and maintain the application. If third-party analytics, crash
+  reporting, or advertising services are enabled in a particular version of
+  GisTV, those services may process information according to their own
+  privacy policies.
 </p>
 
 <p>
-GisTV does not sell your personal information.
+  GisTV does not sell your personal information.
 </p>
 
 <h2>6. How Information Is Used</h2>
 
-<p>Information may be used to:</p>
+<p>
+  Information may be used to:
+</p>
 
 <ul>
   <li>provide and operate GisTV features;</li>
@@ -132,67 +141,68 @@ GisTV does not sell your personal information.
 <h2>7. Data Retention</h2>
 
 <p>
-Information is retained only for as long as reasonably necessary to provide
-the applicable features, maintain security, comply with legal obligations,
-resolve disputes, and enforce applicable agreements.
+  Information is retained only for as long as reasonably necessary to provide
+  the applicable features, maintain security, comply with legal obligations,
+  resolve disputes, and enforce applicable agreements.
 </p>
 
 <h2>8. Data Deletion</h2>
 
 <p>
-Where GisTV provides an account or data-deletion feature, users may request
-deletion of their account and associated personal information through the
-available account or support mechanisms.
+  Where GisTV provides an account or data-deletion feature, users may request
+  deletion of their account and associated personal information through the
+  available account or support mechanisms.
 </p>
 
 <p>
-Some information may need to be retained when required by law, necessary
-for security, or required to complete legitimate business or technical
-operations.
+  Some information may need to be retained when required by law, necessary
+  for security, or required to complete legitimate business or technical
+  operations.
 </p>
 
 <h2>9. Third-Party Services</h2>
 
 <p>
-GisTV may interact with third-party services selected or configured by the
-user. Those services operate under their own terms and privacy policies.
-GisTV is not responsible for the privacy practices of third-party services
-that users choose to access.
+  GisTV may interact with third-party services selected or configured by the
+  user. Those services operate under their own terms and privacy policies.
+  GisTV is not responsible for the privacy practices of third-party services
+  that users choose to access.
 </p>
 
 <h2>10. Security</h2>
 
 <p>
-We use reasonable technical and organizational measures intended to protect
-information processed through GisTV. However, no method of transmission or
-electronic storage can be guaranteed to be completely secure.
+  We use reasonable technical and organizational measures intended to protect
+  information processed through GisTV. However, no method of transmission or
+  electronic storage can be guaranteed to be completely secure.
 </p>
 
 <h2>11. Children's Privacy</h2>
 
 <p>
-GisTV is not intended to knowingly collect personal information from
-children in violation of applicable law. If you believe that a child has
-provided personal information improperly, please contact us so that the
-information can be reviewed and, where appropriate, deleted.
+  GisTV is not intended to knowingly collect personal information from
+  children in violation of applicable law. If you believe that a child has
+  provided personal information improperly, please contact us so that the
+  information can be reviewed and, where appropriate, deleted.
 </p>
 
 <h2>12. Changes to This Privacy Policy</h2>
 
 <p>
-We may update this Privacy Policy from time to time. The updated version
-will be published at this location with a revised "Last updated" date.
+  We may update this Privacy Policy from time to time. The updated version
+  will be published at this location with a revised "Last updated" date.
 </p>
 
 <h2>13. Contact Us</h2>
 
 <p>
-For privacy questions, requests, or concerns regarding GisTV, please contact
-us at:
+  For privacy questions, requests, or concerns regarding GisTV, please
+  contact us at:
 </p>
 
 <p>
-<strong>Privacy contact:</strong> [INSERT YOUR GIS PRIVACY EMAIL ADDRESS]
+  <strong>Privacy contact:</strong>
+  <a href="mailto:gis1948@gmail.com">gis1948@gmail.com</a>
 </p>
 
 </body>
