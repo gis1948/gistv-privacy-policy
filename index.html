@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,196 +14,231 @@
       color: #222;
       background: #fff;
     }
-
-    h1 {
-      color: #2FD4C0;
-      margin-bottom: 8px;
-    }
-
-    h2 {
-      color: #333;
-      margin-top: 32px;
-    }
-
-    .updated {
-      color: #666;
-      margin-bottom: 32px;
-    }
-
-    a {
-      color: #167f75;
+    h1 { color: #167f75; margin-bottom: 8px; }
+    h2 { color: #333; margin-top: 32px; }
+    .updated { color: #666; margin-bottom: 32px; }
+    a { color: #167f75; }
+    ul { padding-left: 22px; }
+    code { background: #f2f2f2; padding: 1px 4px; border-radius: 3px; }
+    .summary {
+      background: #f6fbfa;
+      border: 1px solid #cfe9e5;
+      border-radius: 8px;
+      padding: 14px 18px;
     }
   </style>
 </head>
-
 <body>
 
 <h1>GisTV Privacy Policy</h1>
 
-<p class="updated">
-  <strong>Last updated:</strong> September 20, 2026
-</p>
+<p class="updated"><strong>Last updated:</strong> October 2, 2026</p>
 
 <p>
-  GisTV ("GisTV", "we", "us", or "our") is an application provided by GIS.
-  This Privacy Policy explains how information may be handled when you use the
-  GisTV Android TV application.
+  GisTV ("GisTV", "we", "us", or "our") is an IPTV player application for Android TV.
+  This Privacy Policy explains what information the GisTV app handles, where it is
+  stored, and the choices you have. It describes the app as it is actually built;
+  where a feature is not active in the current release, we say so.
 </p>
 
-<h2>1. Information You Provide</h2>
+<div class="summary">
+  <strong>In short:</strong> GisTV stores your playlists, channels, favorites, EPG data,
+  viewing history and provider credentials in a local database on your device. Accounts
+  and sign-in are local to your device in this version. We do not operate a cloud
+  account server for GisTV in this release. The app uses Google Firebase Analytics and
+  Crashlytics, Google AdMob (with Google's consent tool), and an Adsterra ad network for
+  advertising, and fetches programme metadata from TMDB. You can delete your account and
+  its local data from inside the app.
+</div>
 
-<p>
-  Depending on the features you use, GisTV may process information that you
-  provide directly, such as your name, email address, account information,
-  playlist information, or other information necessary to provide requested
-  features.
-</p>
-
-<h2>2. Device and Technical Information</h2>
-
-<p>
-  GisTV may process technical information associated with your device when
-  necessary to operate, secure, synchronize, troubleshoot, or improve the
-  application. This may include device or installation identifiers,
-  application version information, operating-system information, network
-  information, and diagnostic information.
-</p>
-
-<p>
-  GisTV does not require access to information unrelated to the functionality
-  of the application.
-</p>
-
-<h2>3. Account and Synchronization Features</h2>
-
-<p>
-  If you use account or synchronization features, information associated with
-  those features may be transmitted between the application and the services
-  used to provide them. The information processed depends on the features you
-  choose to use.
-</p>
-
-<p>
-  Synchronization is intended to allow supported Gis applications and devices
-  to maintain the information necessary for the enabled synchronization
-  features.
-</p>
-
-<h2>4. Playlists and IPTV Information</h2>
-
-<p>
-  If you configure IPTV or playlist features, GisTV may process information
-  required to retrieve and display the content or services you configure.
-  This may include playlist addresses, channel information, provider
-  information, authentication information, and related configuration data,
-  depending on the service you use.
-</p>
-
-<p>
-  GisTV does not control the privacy practices of third-party IPTV providers,
-  playlist providers, streaming services, or websites that you choose to
-  access through the application. You should review the privacy policies of
-  those services separately.
-</p>
-
-<h2>5. Analytics, Advertising, and Diagnostics</h2>
-
-<p>
-  GisTV may use technical diagnostics or similar services when required to
-  operate and maintain the application. If third-party analytics, crash
-  reporting, or advertising services are enabled in a particular version of
-  GisTV, those services may process information according to their own
-  privacy policies.
-</p>
-
-<p>
-  GisTV does not sell your personal information.
-</p>
-
-<h2>6. How Information Is Used</h2>
-
-<p>
-  Information may be used to:
-</p>
-
+<h2>1. Information you provide</h2>
 <ul>
-  <li>provide and operate GisTV features;</li>
-  <li>authenticate and manage accounts;</li>
-  <li>provide supported synchronization features;</li>
-  <li>retrieve and display configured IPTV content;</li>
-  <li>maintain application security;</li>
-  <li>diagnose technical problems;</li>
-  <li>respond to support requests; and</li>
-  <li>comply with applicable legal requirements.</li>
+  <li><strong>Account information.</strong> If you create an optional local Gis account,
+      you provide a username and a password. The password itself is never stored; see
+      section 4. A "remember me" preference may also be stored.</li>
+  <li><strong>Playlists and provider details.</strong> If you add an M3U playlist or an
+      Xtream Codes provider, you provide the playlist URL or server address, port, and
+      (for Xtream) a username and password. These are used to connect to the IPTV
+      provider you chose.</li>
+  <li><strong>Optional credentials scanning.</strong> If you use the credential scanner,
+      you may grant camera access so the app can read provider credentials from an image.
+      Text recognition runs on your device; images are not uploaded to us.</li>
 </ul>
 
-<h2>7. Data Retention</h2>
-
+<h2>2. Information stored on your device</h2>
 <p>
-  Information is retained only for as long as reasonably necessary to provide
-  the applicable features, maintain security, comply with legal obligations,
-  resolve disputes, and enforce applicable agreements.
+  GisTV keeps its data in its private app storage. This includes:
+</p>
+<ul>
+  <li>Room (SQLite) databases holding playlists, channels, favourite groups, EPG data,
+      viewing history, and the provider credentials attached to your playlist rows;</li>
+  <li>app preferences (including the sign-in/ownership state and the last username used
+      for convenience);</li>
+  <li>an image cache used to speed up artwork loading.</li>
+</ul>
+<p>
+  Data is separated by slot: the <strong>guest</strong> slot (used before you sign in or
+  when you choose "Continue as Guest") and one isolated database per <strong>Gis
+  account</strong>. Your account data is not mixed with guest data.
 </p>
 
-<h2>8. Data Deletion</h2>
-
+<h2>3. Device and technical information</h2>
 <p>
-  Where GisTV provides an account or data-deletion feature, users may request
-  deletion of their account and associated personal information through the
-  available account or support mechanisms.
+  To operate and diagnose the app, GisTV may process device and app information such as a
+  random, app-generated device identifier (not a hardware serial), the device model name,
+  the app version, the operating-system/API level, and general network state. This
+  information is used to run the app, keep a stable identity for the local account, and
+  show diagnostics.
 </p>
 
+<h2>4. Accounts and sign-in (local to your device)</h2>
 <p>
-  Some information may need to be retained when required by law, necessary
-  for security, or required to complete legitimate business or technical
-  operations.
+  In this version, GisTV accounts are <strong>local to your device</strong>. When you
+  create or sign in to an account:
+</p>
+<ul>
+  <li>The account identifier is derived deterministically from your username (a UUIDv5
+      value). The same username maps to the same identifier across Gis apps.</li>
+  <li>Your password is verified on the device using PBKDF2-SHA256 with 120,000
+      iterations. Only a random salt, the derived verifier and the iteration count are
+      kept; the plaintext password is never written to storage.</li>
+  <li>This sign-in material is stored using Android Keystore-backed encrypted
+      preferences.</li>
+</ul>
+<p>
+  Signed-in or not, your playlists, favourites, viewing history and provider credentials
+  remain in the local database described above.
 </p>
 
-<h2>9. Third-Party Services</h2>
-
+<h2>5. Do we send your data to our servers?</h2>
 <p>
-  GisTV may interact with third-party services selected or configured by the
-  user. Those services operate under their own terms and privacy policies.
-  GisTV is not responsible for the privacy practices of third-party services
-  that users choose to access.
+  <strong>GisTV does not contact a cloud account server in this release.</strong> The
+  app's cloud-sync code is present in the source but is not connected in this build, so
+  no account data, playlist, favourite or credential is transmitted to a server operated
+  by us. Account creation, sign-in and account deletion are performed entirely on your
+  device.
+</p>
+<p>
+  <strong>Local network sync.</strong> When you explicitly link GisTV with a compatible
+  app (such as the Windows app) on the same Wi-Fi network, playlists and settings are
+  transferred directly between the two devices over your local network. This transfer
+  does not go through a server operated by us.
+</p>
+<p>
+  <strong>Your IPTV provider.</strong> When you use a playlist or Xtream provider, your
+  device connects directly to that provider's servers using the credentials you entered.
+  That provider's handling of your data is governed by its own privacy policy, which we
+  do not control.
 </p>
 
-<h2>10. Security</h2>
-
+<h2>6. Third-party services</h2>
+<p>The app includes the following third-party components, which may process data under
+   their own privacy policies:</p>
+<ul>
+  <li><strong>Google Firebase Analytics</strong> &mdash; anonymous app usage and
+      app-open events, an app-instance identifier, and device/app diagnostics, to help us
+      understand usage and fix issues.</li>
+  <li><strong>Google Firebase Crashlytics</strong> &mdash; crash and error diagnostics to
+      help us fix bugs. The app also writes a local crash log on the device.</li>
+  <li><strong>Google AdMob</strong> and <strong>Google User Messaging Platform (UMP)</strong>
+      &mdash; advertising and consent management. See section 7.</li>
+  <li><strong>Adsterra</strong> &mdash; an additional ad network that may be used to serve
+      ads in the app.</li>
+  <li><strong>TMDB (The Movie Database)</strong> &mdash; programme and artwork metadata
+      is requested from TMDB's public API to enrich channel information.</li>
+  <li><strong>GitHub</strong> &mdash; the app checks GitHub for software updates.</li>
+  <li><strong>iptv-org / jsDelivr</strong> &mdash; public, freely available playlist and
+      channel-list sources that you may choose to browse.</li>
+</ul>
 <p>
-  We use reasonable technical and organizational measures intended to protect
-  information processed through GisTV. However, no method of transmission or
-  electronic storage can be guaranteed to be completely secure.
+  We do not send your playlists, favourites, viewing history, or provider credentials to
+  these services.
 </p>
 
-<h2>11. Children's Privacy</h2>
-
+<h2>7. Advertising and consent</h2>
 <p>
-  GisTV is not intended to knowingly collect personal information from
-  children in violation of applicable law. If you believe that a child has
-  provided personal information improperly, please contact us so that the
-  information can be reviewed and, where appropriate, deleted.
+  GisTV may show advertising to support development. Where required (for example in the
+  EEA and UK), Google's User Messaging Platform is used to request and manage your consent
+  before the ads SDK serves personalized ads. The ad networks may process an advertising
+  identifier and ad-interaction data to serve and measure ads. You can change your consent
+  choices through the consent form when it is presented, and you can reset or limit your
+  advertising ID in your device's system settings.
 </p>
 
-<h2>12. Changes to This Privacy Policy</h2>
-
+<h2>8. Analytics and crash reporting</h2>
 <p>
-  We may update this Privacy Policy from time to time. The updated version
-  will be published at this location with a revised "Last updated" date.
+  Firebase Analytics is initialized when the app starts and Crashlytics collects crash
+  diagnostics. These help us keep GisTV stable. We do not use them to build advertising
+  profiles of your IPTV content, and we do not sell your personal information.
 </p>
 
-<h2>13. Contact Us</h2>
+<h2>9. Permissions the app requests</h2>
+<ul>
+  <li><strong>Internet / network / Wi-Fi state</strong> &mdash; to load playlists and
+      streams, fetch metadata, and support local network linking.</li>
+  <li><strong>Camera</strong> (optional) &mdash; only for the credential-scanning feature;
+      you can decline it.</li>
+  <li><strong>Notifications</strong> and <strong>foreground media playback</strong>
+      &mdash; to keep playback running and show playback controls.</li>
+  <li><strong>Read media</strong> &mdash; to let you browse your own photo/video media
+      where you choose to.</li>
+  <li><strong>Install updates</strong> &mdash; used only to apply an app update on builds
+      distributed outside an app store; store builds open the releases page instead.</li>
+</ul>
 
+<h2>10. Data retention</h2>
 <p>
-  For privacy questions, requests, or concerns regarding GisTV, please
-  contact us at:
+  Local data (playlists, favourites, viewing history, EPG, provider credentials and account
+  material) is retained on your device until you delete your account in the app, clear the
+  app's data in system settings, or uninstall the app. There is no server-side copy for us
+  to retain in this release.
 </p>
 
+<h2>11. Account and data deletion</h2>
 <p>
-  <strong>Privacy contact:</strong>
-  <a href="mailto:gis1948@gmail.com">gis1948@gmail.com</a>
+  You can delete your Gis account and its local data from inside the app. Because GisTV
+  accounts are local to your device in this version, deletion is performed on your device;
+  no server-side deletion occurs. Full instructions, including what is deleted and what is
+  kept, are on the account-deletion page:
 </p>
+<p><a href="./delete-account.html">GisTV account deletion instructions</a></p>
+
+<h2>12. Your choices</h2>
+<ul>
+  <li>Use "Continue as Guest" to use the app without creating an account.</li>
+  <li>Delete your account and its local data from the in-app deletion flow (section 11).</li>
+  <li>Clear all app data or uninstall the app to remove everything it stores locally.</li>
+  <li>Manage ad consent via the consent form and your device's advertising settings.</li>
+</ul>
+
+<h2>13. Children's privacy</h2>
+<p>
+  GisTV is a general-audience IPTV player and is not directed to children. We do not
+  knowingly collect personal information from children. If you believe a child has
+  provided personal information through the app, please contact us and we will review and,
+  where appropriate, delete it.
+</p>
+
+<h2>14. Security</h2>
+<p>
+  We use reasonable technical measures to protect information processed by GisTV,
+  including Android Keystore-backed encrypted storage for sign-in material. However, no
+  method of storage or transmission can be guaranteed to be completely secure.
+</p>
+
+<h2>15. Changes to this policy</h2>
+<p>
+  We may update this Privacy Policy from time to time. The updated version will be
+  published at this location with a revised "Last updated" date.
+</p>
+
+<h2>16. Contact us</h2>
+<p>
+  For privacy questions or requests regarding GisTV, contact:
+  <a href="mailto:gis1948@gmail.com">gis1948@gmail.com</a>.
+</p>
+
+<p><a href="./delete-account.html">GisTV account deletion instructions</a></p>
 
 </body>
 </html>
-```

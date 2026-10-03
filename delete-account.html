@@ -1,55 +1,127 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GisTV Account Deletion</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      color: #222;
+      background: #fff;
+    }
+    h1 { color: #167f75; margin-bottom: 8px; }
+    h2 { color: #333; margin-top: 32px; }
+    .updated { color: #666; margin-bottom: 32px; }
+    a { color: #167f75; }
+    ul, ol { padding-left: 22px; }
+    .note {
+      background: #fff8e6;
+      border: 1px solid #f0dca6;
+      border-radius: 8px;
+      padding: 14px 18px;
+    }
+  </style>
 </head>
 <body>
-  <h1>GisTV Account and Data Deletion</h1>
 
-  <p>Last updated: September 20, 2026</p>
+<h1>GisTV Account and Data Deletion</h1>
 
-  <p>
-    GisTV users can request deletion of their account and associated
-    personal data.
-  </p>
+<p class="updated"><strong>Last updated:</strong> October 2, 2026</p>
 
-  <h2>How to Request Deletion</h2>
+<p>
+  This page explains how to delete your Gis account and associated data in the GisTV
+  Android TV app, what is deleted, and what is kept.
+</p>
 
-  <p>
-    Send an email to
-    <a href="mailto:gis1948@gmail.com">gis1948@gmail.com</a>
-    with the subject:
-  </p>
+<div class="note">
+  <strong>Important:</strong> In the current version of GisTV, accounts and sign-in are
+  <strong>local to your device</strong>. GisTV does not operate a cloud account server in
+  this release, so deleting your account removes your account and its data from your
+  device. There is no separate server-side copy of your account for us to delete.
+</div>
 
-  <p><strong>GisTV Account Deletion Request</strong></p>
+<h2>Delete your account in the app</h2>
+<ol>
+  <li>Open GisTV and sign in to the account you want to delete (deletion only appears when
+      you are signed in).</li>
+  <li>Go to <strong>Settings</strong>.</li>
+  <li>In the account section, choose <strong>Delete Account</strong>.</li>
+  <li>Confirm in the dialog. Deletion is permanent and cannot be undone.</li>
+</ol>
+<p>
+  When deletion succeeds, the app returns to <strong>Guest mode</strong>.
+</p>
 
-  <p>
-    Include the email address or username associated with your GisTV
-    account so that we can identify the account and process the request.
-  </p>
+<h2>What is deleted</h2>
+<ul>
+  <li>The account's local database (playlists, channels, favourites, EPG data, viewing
+      history, and the provider credentials stored on your playlist rows), together with
+      its write-ahead/shared-memory/journal sidecar files.</li>
+  <li>Account-scoped provider (<code>xtream_*</code>) credentials.</li>
+  <li>The encrypted sign-in vault for the account: username, password salt and verifier,
+      iteration count, and the "remember me" preference.</li>
+  <li>The account identifier held in the device's app state.</li>
+  <li>Any legacy database copies that were claimed into the account.</li>
+</ul>
 
-  <h2>Account and Associated Data</h2>
+<h2>What is kept</h2>
+<ul>
+  <li>Device-owned identity that is not tied to your account: the random device identifier
+      and device name.</li>
+  <li><strong>Guest</strong> data and any other local account on the device (deletion only
+      removes the account you are signed in to).</li>
+  <li>The app installation itself, and app preferences that are not account-scoped.</li>
+</ul>
 
-  <p>
-    After the request is verified, GisTV will delete or remove the
-    personal account information associated with the account, subject
-    to information that may need to be retained for legal, security,
-    fraud-prevention, or other legitimate obligations.
-  </p>
+<h2>If deletion does not complete</h2>
+<p>
+  Deletion is designed to be truthful: if any of the account's database files cannot be
+  removed, the app does <strong>not</strong> report success and does <strong>not</strong>
+  clear your credentials. Nothing is removed, you stay signed in, and you can try again.
+</p>
 
-  <h2>Contact</h2>
+<h2>If you cannot access the app</h2>
+<p>
+  Because GisTV accounts are local to the device, we cannot remotely delete an account
+  that exists only on your device. If you cannot open the app, you can still remove all
+  locally stored data using your device:
+</p>
+<ul>
+  <li>Open Android <strong>Settings &rarr; Apps &rarr; GisTV &rarr; Storage</strong> and
+      choose <strong>Clear data</strong>; or</li>
+  <li>uninstall GisTV. Uninstalling removes the app's local databases, preferences and
+      cache.</li>
+</ul>
+<p>
+  If you believe account information may persist and need help, contact us using the
+  details below and describe your situation.
+</p>
 
-  <p>
-    For account deletion requests, contact:
-    <a href="mailto:gis1948@gmail.com">gis1948@gmail.com</a>
-  </p>
+<h2>What is not performed</h2>
+<p>
+  No server-side account deletion is performed, because GisTV does not contact a cloud
+  account server in this release. The app's cloud-sync code is present in the source but is
+  not connected in this build.
+</p>
 
-  <p>
-    <a href="./index.html">GisTV Privacy Policy</a>
-  </p>
+<h2>Data retention</h2>
+<p>
+  After deletion, the account's data described above is removed from your device. Device
+  identifiers and guest/other-account data remain until you clear app data or uninstall.
+</p>
+
+<h2>Contact</h2>
+<p>
+  For account-deletion questions or support, contact:
+  <a href="mailto:gis1948@gmail.com">gis1948@gmail.com</a>.
+</p>
+
+<p><a href="./index.html">GisTV Privacy Policy</a></p>
+
 </body>
 </html>
-```
